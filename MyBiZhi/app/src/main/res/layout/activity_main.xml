@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity">
+    <!--构建选项卡，方式一：使用变种的radiogroup,第二种方法：TabLayout选项卡放置容器design-->
+    <!--根据界面布局上方为碎片，下方为选项卡-->
+
+
+    <!--引入第三方框架自定义的CommonTabLayout实现选项卡-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        app:tl_textUnselectColor ="@color/tabUnSelected"
+        app:tl_textSelectColor="@color/tabSelected"
+        app:tl_indicator_height="0dp"
+        app:tl_iconMargin = "1dp"
+        >
+        </com.flyco.tablayout.CommonTabLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_main">
+    </FrameLayout>
+
+</RelativeLayout>

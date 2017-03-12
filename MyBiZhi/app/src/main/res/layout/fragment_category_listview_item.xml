@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--总体：左边图片(ImageView)，右边存在线性布局-->
+    <ImageView
+        android:id="@+id/category_list_item_Image"
+        android:padding="8dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="72dp"
+        android:src="@mipmap/ic_icon"/>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="72dp" >
+        <!--此布局上方是相对布局，下方是一条间隔线-->
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceLine"/>
+        <LinearLayout
+            android:layout_above="@id/divide_line"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--此布局左边是线性布局，右边是一张图片-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <!--此布局上方是主标题，下方是副标题-->
+                <TextView
+                    android:id="@+id/category_list_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/textTitle"/>
+                <TextView
+                    android:id="@+id/category_list_item_sub_title"
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/subTitle"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/point"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

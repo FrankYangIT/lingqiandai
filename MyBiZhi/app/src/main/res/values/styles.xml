@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 欢迎界面主题形式，也就是全屏模式，但是存在一点：不在AppCompat下,Activity不能使用AppCompatActivity了,只能使用Activity-->
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+
+    <style name="GuideTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+</resources>

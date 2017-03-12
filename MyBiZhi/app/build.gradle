@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.frank.mybizhi"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //引用第三方框架 viewpager滑动页下方指示灯
+    //引用第三方框架，选项卡框架引用
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+}

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.RecommendFragment">
+
+    <!-- 根据现有app进行分析，推荐界面的组成从上到下依次为：ToolBar——选项卡——viewPager -->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/recommend_toolBarText"
+            />
+    </android.support.v7.widget.Toolbar>
+    <!--中间一条间隔线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/spaceLine"/>
+
+    <!--选项卡-->
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/slidingTabLayout_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:tl_textsize="18dp"
+        app:tl_textSelectColor="@color/recTabSelected"
+        app:tl_textUnselectColor="@color/recTabUnSelected"
+        app:tl_tab_space_equal = "true"
+        app:tl_indicator_color="@color/recTabSelected"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_left="10dp"
+        app:tl_indicator_margin_right="10dp">
+
+    </com.flyco.tablayout.SlidingTabLayout>
+
+    <!--下方的ViewPager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

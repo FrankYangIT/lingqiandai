@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">壁纸精选</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--主页中选项卡TabLayout的名称-->
+    <string name="recommend_tab">推荐</string>
+    <string name="category_tab">分类</string>
+    <string name="search_tab">搜索</string>
+    <string name="more_tab">更多</string>
+    <!--推荐界面ToolBar的内容-->
+    <string name="recommend_toolBarText">壁纸精选</string>
+    <!--推荐界面选项卡中的选项名称-->
+    <string name="hot_tab">热门</string>
+    <string name="lastest_tab">最新</string>
+    <string name="random_tab">随机</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--壁纸选项界面名称-->
+    <string name="imageDetails">壁纸详情</string>
+    <string name="collect">收藏</string>
+    <string name="setAsWallpaper">设为壁纸</string>
+    <string name="downLoad">下载</string>
+
+    <!--分类中测试用文字-->
+    <string name="textTitle">美女图片</string>
+    <string name="subTitle">清纯|可爱|性感</string>
+    <!--搜索中用标题文字-->
+    <string name="search_hot">热门搜索</string>
+    <string name="search_more">查看更多</string>
+    <string name="search_list">搜索列表主页</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorblack">#393838</color>
+
+    <!--主菜单下方选项卡颜色-->
+    <color name="tabSelected">#0ABF4C</color>
+    <color name="tabUnSelected">#828282</color>
+
+    <!--recommend界面选项卡颜色-->
+    <color name="recTabSelected">#0ABF4C</color>
+    <color name="recTabUnSelected">#0e0e0e</color>
+    <!--recommend界面选项卡间隔线颜色-->
+    <color name="spaceLine">#6c6969</color>
+    <!--详情页标题栏背景颜色-->
+    <color name="detailsTitleBackColor">#888e8181</color>
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>

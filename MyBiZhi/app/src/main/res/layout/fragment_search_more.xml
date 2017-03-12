@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--顶部是侧滑容器,底部有动态添加的小圆点,文字和箭头-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--ViewPager高度的定义写成固定的值,写自适应的属性不会有任何效果-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/type2_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <!--容器需要动态的添加,容器里的图片也要动态的添加-->
+
+    </android.support.v4.view.ViewPager>
+
+
+    <!--该顶部,从右向左布局比较合适-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/point"
+            android:src="@mipmap/point"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/search_more"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/point"
+            android:textColor="@color/colorblack"
+            android:textSize="16sp"
+            android:text="@string/search_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--容器,动态添加小圆点-->
+        <LinearLayout
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/search_more"
+            android:id="@+id/type2_container"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
